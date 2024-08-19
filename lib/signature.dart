@@ -343,6 +343,7 @@ class SignatureController extends ValueNotifier<List<Point>> {
     notifyListeners();
   }
 
+  /// Changes the color of the pen and existing signature in the canvas
   void changeColor(Color newColor) {
     penColor = newColor;
     for (Point point in value) {
